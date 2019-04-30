@@ -29,7 +29,7 @@ class MemoryGame extends React.Component {
     topScore: 0,
     images: shuffleArray(images)
   };
-
+  
   shuffledImages = id => {
     for (let i = 0; i < this.state.images.length; i++) {
       if(this.state.images[i].id === id) {
