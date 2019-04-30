@@ -3,7 +3,7 @@ import "./style.css";
 
 function Image(props) {
   return (
-    <div onClick={() => props.removeImage(props.id)} className="img-container">
+    <div onClick={() => props.shuffledImages(props.id)} className="img-container">
       <img alt={props.name} src={props.image} />
     </div>
   );

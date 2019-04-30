@@ -11,20 +11,48 @@ const styles = {
   }
 }
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+}
+
 class MemoryGame extends React.Component {
+
 
   state = {
     correct: 0,
     topScore: 0,
-    images
+    images: shuffleArray(images)
   };
 
-  removeImage = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const images = this.state.images.filter(image => image.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ images });
-  };
+  shuffledImages = id => {
+    for (let i = 0; i < this.state.images.length; i++) {
+      if(this.state.images[i].id === id) {
+        console.log("current elem:", this.state.images[i]);
+        if(this.state.images[i].clicked) {
+          console.log("you lost");
+          for (let j = 0; j < this.state.images.length; j++) {
+            this.state.images[i].clicked = false;
+          }
+          return this.setState({correct: 0, images: shuffleArray(images)});
+        } else {
+          const updatedImages = this.state.images;
+          updatedImages[i].clicked = true;
+          return this.setState({correct: this.state.correct + 1, images: shuffleArray(updatedImages)})
+        }
+      }
+    };
+
+
+    if (this.props.clicked === false) {
+      console.log("This hasn't been clicked");
+    }
+  }
 
   render() {
     return (
@@ -33,11 +61,12 @@ class MemoryGame extends React.Component {
         <div style = {styles.body}>
         {this.state.images.map(image => (
           <Image
-          removeImage={this.removeImage}
+          shuffledImages={this.shuffledImages}
           key={image.id}
           id={image.id}
           image={image.image}
           name={this.state.images.name}
+          clicked={this.clicked}
           />
         ))}
         </div>
