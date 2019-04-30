@@ -34,8 +34,12 @@ class MemoryGame extends React.Component {
     for (let i = 0; i < this.state.images.length; i++) {
       if(this.state.images[i].id === id) {
         console.log("current elem:", this.state.images[i]);
+        // You Lost Check
         if(this.state.images[i].clicked) {
           console.log("you lost");
+          if(this.state.correct > this.state.topScore) {
+            this.setState({ topScore: this.state.correct })
+          }
           for (let j = 0; j < this.state.images.length; j++) {
             this.state.images[i].clicked = false;
           }
