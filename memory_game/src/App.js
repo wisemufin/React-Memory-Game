@@ -33,6 +33,7 @@ class MemoryGame extends React.Component {
         <div style = {styles.body}>
         {this.state.images.map(image => (
           <Image
+          removeImage={this.removeImage}
           key={image.id}
           id={image.id}
           image={image.image}
