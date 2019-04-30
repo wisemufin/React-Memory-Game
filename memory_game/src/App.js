@@ -1,26 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar';
+import Image from "./components/ImageCards/ImageCards";
+import images from "./images.json"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const styles = {
+  body: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center"
+  }
 }
 
-export default App;
+class MemoryGame extends React.Component {
+
+  state = {
+    correct: 0,
+    topScore: 0,
+    images
+  };
+
+  removeImage = id => {
+    // Filter this.state.friends for friends with an id not equal to the id being removed
+    const images = this.state.images.filter(image => image.id !== id);
+    // Set this.state.friends equal to the new friends array
+    this.setState({ images });
+  };
+
+  render() {
+    return (
+      <div>
+        <NavBar correct={this.state.correct} topScore={this.state.topScore}/>
+        <div style = {styles.body}>
+        {this.state.images.map(image => (
+          <Image
+          key={image.id}
+          id={image.id}
+          image={image.image}
+          name={this.state.images.name}
+          />
+        ))}
+        </div>
+      </div>
+    );
+  }
+}
+
+export default MemoryGame;
