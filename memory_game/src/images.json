@@ -1,26 +1,74 @@
 [
   {
     "id": 1,
-    "name": "SpongeBob",
-    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+    "name": "Charizard",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/5/56/PokemonOfficialCharizard.png/revision/latest?cb=20140414062848",
     "clicked": false
   },
   {
     "id": 2,
-    "name": "Mr. Krabs",
-    "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
+    "name": "Wario",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/3/31/Super_Mario_Party_Wario_Artwork.png/revision/latest?cb=20181123113730",
     "clicked": false
   },
   {
     "id": 3,
-    "name": "Squidward",
-    "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
+    "name": "Squirtle",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/0/06/SquirtleArtwork.png/revision/latest?cb=20180707004146",
     "clicked": false
   },
   {
     "id": 4,
-    "name": "Dexter",
-    "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
+    "name": "Mario",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/d/dd/B691A0C0-6E6E-4A32-B94E-044149ECEBBD.png/revision/latest?cb=20181022140647",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Donkey Kong",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/b/b5/DK_%28DKCTF%29.png/revision/latest/scale-to-width-down/350?cb=20130617145404",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Link",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/9/9a/Link_%28Breath_of_the_Wild%29.png/revision/latest?cb=20181221235926",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Yoshi",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/0/04/Yoshi_%28Yoshi%27s_Crafted_World%29.png/revision/latest?cb=20181222023856",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Kirby",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/f/f4/BF9A7720-0734-4609-B76C-65624055A1FF.png/revision/latest?cb=20180813140735",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "Pikachu",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/0/0d/025Pikachu.png/revision/latest?cb=20180707004613",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Ness",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/4/48/Ness_Clay.png/revision/latest?cb=20141003002958",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Falco",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/1/1b/SFZ_Falco_Lombardi.png/revision/latest?cb=20180723022611",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Mewtwo",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/d/d3/Mewtwo.png/revision/latest?cb=20150418194845",
     "clicked": false
   }
 ]
